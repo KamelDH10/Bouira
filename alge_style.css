@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Poppins:ital,wght@1,300&family=Quicksand:wght@700&family=Ubuntu:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body,html{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    background: url(ibrahim-moudjahed-fBK_ZeMr6I0-unsplash.jpg) center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+/* navbar start*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding-top: 15px;
+}
+.navbar ul{
+    z-index: 1;
+}
+.navbar ul li{
+    display: inline-block;
+    margin-right: 90px;
+    position: relative;
+    
+}
+
+.navbar h1{
+    margin: 0 36px;
+    font-weight: 600;
+    color: white;
+    z-index: 1;
+}
+
+.navbar ul li::after{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    transition: all .3s ease 0s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+/* navbar end*/
+
+.dimensions{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    
+}
+
+/* c-left start */
+
+.dimensions .side-left{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    -webkit-mask:linear-gradient(#000 0 0),
+                 linear-gradient(#000 0 0);
+    -webkit-mask-clip: text, padding-box;
+    -webkit-mask-composite: xor;
+}
+.dimensions .side-left .title h1{
+    font-size: 200px;
+    margin-right: 10px;
+    text-shadow:0 0 10px rgba(255, 255, 255, .6) ;
+    color: transparent;
+}
+
+.dimensions .side-left .content{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: #fff;
+}
+.dimensions .side-left .content h2{
+    margin-bottom: 2%;
+}
+.dimensions .side-left .content p{
+    margin-bottom: 3%;
+    color: rgb(205, 205, 205);
+    
+}
+.dimensions .side-left .content a{
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .3);
+    transition: all .3s ease 0s;
+    
+}
+.dimensions .side-left .content a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* c-left end */
+/* c-right start */
+
+.dimensions .side-rigth{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dimensions .side-rigth h1{
+    margin-left: 5px;
+    color: #fff;
+    font-size: 200px;
+
+    text-shadow: 
+        0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+}
+.dimensions .side-rigth h3{
+    position: absolute;
+    color: #fff;
+    font-size: 60px;
+    transform:translateY(150%) ;
+    margin-left: 5px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+/* c-right start */
